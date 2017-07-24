@@ -5,10 +5,18 @@ import {
     Stylesheet
 } from "react-native";
 
+// Import Components
+import ViewContainer from "./components/ViewContainer";
+
+// Render App
 export default class App extends Component {
     render(){
         return(
-            <Text>Hello World!</Text>
+					<ViewContainer>
+						<Text>
+							Hello World!
+						</Text>
+					</ViewContainer>
         );
     }
 }
