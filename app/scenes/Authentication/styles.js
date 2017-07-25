@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 	TextInput: {
-		top: 20,
+		top: 10,
 		height: 20,
 		paddingLeft: 40,
 		paddingRight: 40,
@@ -19,17 +19,31 @@ export const styles = StyleSheet.create({
 	logo:{
 		alignItems:"center",
 		top: 20,
+		marginBottom: 30
 	},
 	register:{
-
+		paddingLeft: 40,
+		paddingRight: 40,
+		marginTop: 20,
+		alignItems: "center"
 	},
 	login:{
+		paddingLeft: 40,
+		paddingRight: 40
+	},
+	loginButton:{
+		borderWidth: 1,
+		height: 20,
+		alignItems: "center",
+
+	},
+	loginButtonText:{
 
 	},
 	registerButton:{
 
 	},
-	loginButton:{
-		
+	registerButtonText:{
+
 	}
 })

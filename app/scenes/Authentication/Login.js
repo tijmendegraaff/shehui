@@ -60,11 +60,13 @@ export default class Login extends Component {
 
 					<View style={styles.login}>
 						<TouchableOpacity style={styles.loginButton}>
+							<Text style={styles.loginButtonText}>LOG IN</Text>
 						</TouchableOpacity>
 					</View>
 
 					<View style={styles.register}>
 						<TouchableOpacity style={styles.registerButton}>
+							<Text style={styles.registerButtonText}>REGISTER</Text>
 						</TouchableOpacity>
 					</View>
 
