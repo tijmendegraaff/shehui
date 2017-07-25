@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
     Text,
     View,
-	TextInput
+		TextInput,
+		Image
 } from "react-native";
 
 // Import Components
@@ -11,6 +12,7 @@ import StatusbarBackground from "../../components/StatusbarBackground";
 
 // Import StyleSheet
 import { styles } from './styles';
+// Import Resources
 
 // Render Component
 export default class Login extends Component {
@@ -28,7 +30,7 @@ export default class Login extends Component {
 				<ViewContainer>
 					<StatusbarBackground />
 					<View style={styles.logo}>
-						<Image source={require('')} />
+						<Image source={require('../../resources/sjauf_logo.png')} />
 					</View>
 					<View>
 						<TextInput
