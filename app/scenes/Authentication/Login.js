@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import {
     Text,
     View,
-		StyleSheet,
-		TextInput
+	TextInput
 } from "react-native";
 
 // Import Components
-import ViewContainer from "../components/ViewContainer";
-import StatusbarBackground from "../components/StatusbarBackground";
+import ViewContainer from "../../components/ViewContainer";
+import StatusbarBackground from "../../components/StatusbarBackground";
+
+// Import StyleSheet
+import { styles } from './styles';
 
 // Render App
-export default class App extends Component {
+export default class Login extends Component {
 	constructor(props){
 		super(props)
 
@@ -28,7 +30,7 @@ export default class App extends Component {
 					<View>
 						<TextInput
 							style={styles.TextInput}
-							onChangeText={(text) => this.setState({"email": text})}
+							onChangeText={(text) => this.setState({email: text})}
 							value={this.state.email}
 							placeholder="EMAIL"
 							autoCorrect={false}
@@ -39,7 +41,7 @@ export default class App extends Component {
 
 						<TextInput
 							style={styles.TextInput}
-							onChangeText={(text) => this.setState({"password": text})}
+							onChangeText={(text) => this.setState({password: text})}
 							value={this.state.password}
 							placeholder="PASSWORD"
 							secureTextEntry={true}
@@ -53,18 +55,3 @@ export default class App extends Component {
 			)
 	}
 }
-
-const styles = StyleSheet.create({
-	TextInput: {
-		height: 50,
-		paddingLeft: 20,
-		paddingRight: 20,
-		fontSize: 12,
-	},
-	hairline:{
-		height: 1,
-		backgroundColor: "black",
-		marginLeft: 20,
-		marginRight: 20		
-	}
-})

@@ -5,13 +5,13 @@ import {
     Stylesheet
 } from "react-native";
 // Import scenes
-import Authentication from './scenes/Authentication'
+import Login from './scenes/Authentication/Login'
 
 // Render App
 export default class App extends Component {
     render(){
         return(
-            <Authentication />
+            <Login />
         );
     }
 }
