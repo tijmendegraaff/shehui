@@ -28,7 +28,7 @@ export default class App extends Component {
 					<View>
 						<TextInput
 							style={styles.TextInput}
-							onChangeText={(text) => this.setState({text})}
+							onChangeText={(text) => this.setState({"email": text})}
 							value={this.state.email}
 							placeholder="EMAIL"
 						/>
@@ -36,7 +36,7 @@ export default class App extends Component {
 
 						<TextInput
 							style={styles.TextInput}
-							onChangeText={(text) => this.setState({text})}
+							onChangeText={(text) => this.setState({"password": text})}
 							value={this.state.password}
 							placeholder="PASSWORD"
 							secureTextEntry={(true)}
