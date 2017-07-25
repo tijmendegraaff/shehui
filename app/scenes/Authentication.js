@@ -31,6 +31,9 @@ export default class App extends Component {
 							onChangeText={(text) => this.setState({"email": text})}
 							value={this.state.email}
 							placeholder="EMAIL"
+							autoCorrect={false}
+							autoCapitalize={"none"}
+							returnKeyType="next"
 						/>
 						<View style={styles.hairline} />
 
@@ -39,7 +42,10 @@ export default class App extends Component {
 							onChangeText={(text) => this.setState({"password": text})}
 							value={this.state.password}
 							placeholder="PASSWORD"
-							secureTextEntry={(true)}
+							secureTextEntry={true}
+							autoCorrect={false}
+							autoCapitalize={"none"}
+							returnKeyType="go"
 						/>
 						<View style={styles.hairline} />
 					</View>
