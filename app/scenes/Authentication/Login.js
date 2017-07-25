@@ -12,7 +12,7 @@ import StatusbarBackground from "../../components/StatusbarBackground";
 // Import StyleSheet
 import { styles } from './styles';
 
-// Render App
+// Render Component
 export default class Login extends Component {
 	constructor(props){
 		super(props)
@@ -27,6 +27,9 @@ export default class Login extends Component {
 			return(
 				<ViewContainer>
 					<StatusbarBackground />
+					<View style={styles.logo}>
+						<Image source={require('')} />
+					</View>
 					<View>
 						<TextInput
 							style={styles.TextInput}
