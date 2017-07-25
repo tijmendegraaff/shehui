@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
     Text,
     View,
-    Stylesheet
+		StyleSheet,
+		TextInput
 } from "react-native";
 
 // Import Components
@@ -11,11 +12,53 @@ import StatusbarBackground from "../components/StatusbarBackground";
 
 // Render App
 export default class App extends Component {
-    render(){
-        return(
-					<ViewContainer>
-						<StatusbarBackground />
-					</ViewContainer>
-        );
-    }
+	constructor(props){
+		super(props)
+
+		this.state = {
+			email: "",
+			password: ""
+		}
+	}
+
+	render(){
+			return(
+				<ViewContainer>
+					<StatusbarBackground />
+					<View>
+						<TextInput
+							style={styles.TextInput}
+							onChangeText={(text) => this.setState({text})}
+							value={this.state.email}
+							placeholder="EMAIL"
+						/>
+						<View style={styles.hairline} />
+
+						<TextInput
+							style={styles.TextInput}
+							onChangeText={(text) => this.setState({text})}
+							value={this.state.password}
+							placeholder="PASSWORD"
+							secureTextEntry={(true)}
+						/>
+						<View style={styles.hairline} />
+					</View>
+				</ViewContainer>
+			)
+	}
 }
+
+const styles = StyleSheet.create({
+	TextInput: {
+		height: 50,
+		paddingLeft: 20,
+		paddingRight: 20,
+		fontSize: 12,
+	},
+	hairline:{
+		height: 1,
+		backgroundColor: "black",
+		marginLeft: 20,
+		marginRight: 20		
+	}
+})
