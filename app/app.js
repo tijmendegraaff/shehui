@@ -7,15 +7,15 @@ import {
 
 // Import Components
 import ViewContainer from "./components/ViewContainer";
+import StatusbarBackground from "./components/StatusbarBackground";
 
 // Render App
 export default class App extends Component {
     render(){
         return(
 					<ViewContainer>
-						<Text>
-							Hello World!
-						</Text>
+						<StatusbarBackground />
+                        <Text>Hello guys!</Text>
 					</ViewContainer>
         );
     }
