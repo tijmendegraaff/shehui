@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 	TextInput: {
-		height: 20,
+		top: 20,
+		height: 80,
 		paddingLeft: 40,
 		paddingRight: 40,
 		fontSize: 12,
@@ -16,6 +17,7 @@ export const styles = StyleSheet.create({
 		marginBottom: 40
     },
     logo:{
-
+		alignItems:"center",
+		top: 20,
     }
 })
