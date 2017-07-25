@@ -3,7 +3,8 @@ import {
     Text,
     View,
 		TextInput,
-		Image
+		Image,
+		TouchableOpacity
 } from "react-native";
 
 // Import Components
@@ -56,6 +57,17 @@ export default class Login extends Component {
 						/>
 						<View style={styles.hairline} />
 					</View>
+
+					<View style={styles.login}>
+						<TouchableOpacity style={styles.loginButton}>
+						</TouchableOpacity>
+					</View>
+
+					<View style={styles.register}>
+						<TouchableOpacity style={styles.registerButton}>
+						</TouchableOpacity>
+					</View>
+
 				</ViewContainer>
 			)
 	}
